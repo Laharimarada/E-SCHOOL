@@ -8,7 +8,7 @@ const Global = () => {
         <MultiLevelSidebar />
       </div>
 
-      <div className="ml-72 p-10 bg-gray-300 w-full">
+      <div className="ml-72 p-10 bg-gray-300 min-h-screen w-full">
         <Outlet />
       </div>
     </div>
