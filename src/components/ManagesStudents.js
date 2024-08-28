@@ -101,6 +101,7 @@ const ManagesStudents = () => {
                 className="block text-sm font-medium leading-6 text-gray-900"
               >
                 First name
+                <span className="text-red-500 ml-1">*</span>
               </label>
               <div className="mt-2">
                 <input
@@ -111,6 +112,7 @@ const ManagesStudents = () => {
                   onChange={handleChange}
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
+                <span className="text-sm text-gray-500">Enter your first name</span>
               </div>
             </div>
 
@@ -120,6 +122,7 @@ const ManagesStudents = () => {
                 className="block text-sm font-medium leading-6 text-gray-900"
               >
                 Last name
+                <span className="text-red-500 ml-1">*</span>
               </label>
               <div className="mt-2">
                 <input
@@ -130,6 +133,7 @@ const ManagesStudents = () => {
                   onChange={handleChange}
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
+                <span className="text-sm text-gray-500">Enter your last name</span>
               </div>
             </div>
 
@@ -139,6 +143,7 @@ const ManagesStudents = () => {
                 className="block text-sm font-medium leading-6 text-gray-900"
               >
                 Mobile Number
+                <span className="text-red-500 ml-1">*</span>
               </label>
               <div className="mt-2">
                 <input
@@ -149,12 +154,14 @@ const ManagesStudents = () => {
                   onChange={handleChange}
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
+                <span className="text-sm text-gray-500">Enter your mobile number</span>
               </div>
             </div>
 
             <fieldset className="col-span-2">
               <legend className="text-sm leading-6 text-gray-900">
                 Gender
+                <span className="text-red-500 ml-1">*</span>
               </legend>
               <div className="mt-6 flex gap-5">
                 <div className="flex items-center gap-x-3">
@@ -190,6 +197,7 @@ const ManagesStudents = () => {
                   >
                     Female
                   </label>
+                  
                 </div>
               </div>
             </fieldset>
@@ -200,6 +208,7 @@ const ManagesStudents = () => {
                 className="block text-sm font-medium leading-6 text-gray-900"
               >
                 Email address
+                <span className="text-red-500 ml-1">*</span>
               </label>
               <div className="mt-2">
                 <input
@@ -210,6 +219,7 @@ const ManagesStudents = () => {
                   onChange={handleChange}
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
+                <span className="text-sm text-gray-500">Enter your Email</span>
               </div>
             </div>
 
@@ -219,6 +229,7 @@ const ManagesStudents = () => {
                 className="block text-sm font-medium leading-6 text-gray-900"
               >
                 Class Section
+                <span className="text-red-500 ml-1">*</span>
               </label>
               <div className="mt-2">
                 <select
@@ -233,6 +244,7 @@ const ManagesStudents = () => {
                   <option value="C">C</option>
                   <option value="D">D</option>
                 </select>
+                
               </div>
             </div>
 
@@ -242,6 +254,7 @@ const ManagesStudents = () => {
                 className="block text-sm font-medium leading-6 text-gray-900"
               >
                 Category
+                <span className="text-red-500 ml-1">*</span>
               </label>
               <div className="mt-2">
                 <select
@@ -266,6 +279,7 @@ const ManagesStudents = () => {
                 className="block text-sm font-medium leading-6 text-gray-900"
               >
                 GR Number
+                <span className="text-red-500 ml-1">*</span>
               </label>
               <div className="mt-2">
                 <input
@@ -285,6 +299,7 @@ const ManagesStudents = () => {
                 className="block text-sm font-medium leading-6 text-gray-900"
               >
                 Caste
+                <span className="text-red-500 ml-1">*</span>
               </label>
               <div className="mt-2">
                 <input
@@ -304,6 +319,7 @@ const ManagesStudents = () => {
                 className="block text-sm font-medium leading-6 text-gray-900"
               >
                 Religion
+                <span className="text-red-500 ml-1">*</span>
               </label>
               <div className="mt-2">
                 <input
@@ -323,6 +339,7 @@ const ManagesStudents = () => {
                 className="block text-sm font-medium leading-6 text-gray-900"
               >
                 Admission Date
+                <span className="text-red-500 ml-1">*</span>
               </label>
               <div className="mt-2">
                 <input
@@ -342,6 +359,7 @@ const ManagesStudents = () => {
                 className="block text-sm font-medium leading-6 text-gray-900"
               >
                 Blood Group
+                <span className="text-red-500 ml-1">*</span>
               </label>
               <div className="mt-2">
                 <input
@@ -361,6 +379,7 @@ const ManagesStudents = () => {
                 className="block text-sm font-medium leading-6 text-gray-900"
               >
                 Height
+                <span className="text-red-500 ml-1">*</span>
               </label>
               <div className="mt-2">
                 <input
@@ -380,6 +399,7 @@ const ManagesStudents = () => {
                 className="block text-sm font-medium leading-6 text-gray-900"
               >
                 Weight
+                <span className="text-red-500 ml-1">*</span>
               </label>
               <div className="mt-2">
                 <input
@@ -399,6 +419,7 @@ const ManagesStudents = () => {
                 className="block text-sm font-medium leading-6 text-gray-900"
               >
                 Street address
+                <span className="text-red-500 ml-1">*</span>
               </label>
               <div className="mt-2">
                 <input
