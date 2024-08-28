@@ -18,7 +18,7 @@ const ManagesStudents = () => {
     weight: "",
     streetAddress: "",
   });
-
+  const [errors, setErrors] = useState({});
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -26,9 +26,36 @@ const ManagesStudents = () => {
       [name]: value,
     });
   };
+  const validate = () => {
+    let tempErrors = {};
+    tempErrors.firstName = formData.firstName ? "" : "First name is required";
+    tempErrors.lastName = formData.lastName ? "" : "Last name is required";
+    tempErrors.mobileNumber = formData.mobileNumber ? "" : "Mobile number is required";
+    tempErrors.gender = formData.gender ? "" : "Gender is required";
+    tempErrors.email = /\S+@\S+\.\S+/.test(formData.email) ? "" : "Email is invalid";
+    tempErrors.classSection = formData.classSection ? "" : "Class section is required";
+    tempErrors.category = formData.category ? "" : "Category is required";
+    tempErrors.grNumber = formData.grNumber ? "" : "GR number is required";
+    tempErrors.caste = formData.caste ? "" : "Caste is required";
+    tempErrors.religion = formData.religion ? "" : "Religion is required";
+    tempErrors.admissionDate = formData.admissionDate ? "" : "Admission date is required";
+    tempErrors.bloodGroup = formData.bloodGroup ? "" : "Blood group is required";
+    tempErrors.height = formData.height ? "" : "Height is required";
+    tempErrors.weight = formData.weight ? "" : "Weight is required";
+    tempErrors.streetAddress = formData.streetAddress ? "" : "Street address is required";
+
+    setErrors(tempErrors);
+    return Object.values(tempErrors).every(x => x === "");
+  };
+
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!validate()) {
+      alert("Please fill in all required fields correctly");
+      return;
+    }
 
     try {
       const response = await fetch(
